@@ -1,0 +1,17 @@
+title: "Jardim de Lior"
+description: "A garden for light, art, and connection"
+remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-include-cache
+
+# Optional settings
+locale: "en"
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+author:
+  name: "Jardim de Lior"
+
+# Enable Google Fonts
+minimal_mistakes_skin: default
