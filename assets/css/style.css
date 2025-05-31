@@ -1,25 +1,42 @@
-/* Sidebar container */
+/* --------------------------------------
+   SIDEBAR STYLES
+--------------------------------------- */
+
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 120px; /* narrower */
+  width: 120px; /* Default width */
   height: 100%;
-  background-color: rgba(240, 224, 212, 0.6); /* soft Chukum tone */
+  background-color: rgba(240, 224, 212, 0.6); /* Soft Chukum tone */
   backdrop-filter: blur(10px);
   padding: 20px 10px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   overflow-y: auto;
+  transition: width 0.3s ease, padding 0.3s ease; /* Smooth folding */
 }
 
-/* Main content pushed to the right */
+/* When collapsed (folded) */
+.sidebar.collapsed {
+  width: 60px;
+  padding: 30px 10px;
+  overflow-x: hidden;
+}
+
+/* --------------------------------------
+   MAIN CONTENT
+--------------------------------------- */
+
 .main-content {
-  margin-left: 140px;
+  margin-left: 140px; /* Make space for sidebar */
   padding: 20px;
 }
 
-/* Navigation links */
+/* --------------------------------------
+   NAVIGATION LIST
+--------------------------------------- */
+
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -29,6 +46,10 @@ nav ul {
 nav li {
   margin-bottom: 15px;
 }
+
+/* --------------------------------------
+   NAVIGATION LINKS
+--------------------------------------- */
 
 nav a {
   display: block;
@@ -40,17 +61,7 @@ nav a {
   transition: background-color 0.3s;
 }
 
-nav a::before {
-  content: attr(data-icon);
-  margin-right: 8px;
-  font-size: 1.2em;
-  vertical-align: middle;
-}
-
-nav a:hover {
-  background-color: #e0f7e0;
-}
-
+/* Active link */
 nav a.active {
   font-weight: bold;
   background-color: #c3f3c3;
@@ -58,28 +69,32 @@ nav a.active {
   border-left: 4px solid #4CAF50;
 }
 
-/* 1. Sidebar base: add transition */
-.sidebar {
-  transition: width 0.3s ease, padding 0.3s ease;
+/* Hover effect */
+nav a:hover {
+  background-color: #e0f7e0;
 }
 
-/* 2. Collapsed sidebar style */
-.sidebar.collapsed {
-  width: 60px;               /* narrow width when folded */
-  padding: 30px 10px;
-  overflow-x: hidden;
+/* Optional icon display — remove data-icon from HTML if not needed */
+nav a::before {
+  content: attr(data-icon);
+  margin-right: 8px;
+  font-size: 1.2em;
+  vertical-align: middle;
 }
 
-/* 3. Hide link text when collapsed */
+/* --------------------------------------
+   COLLAPSED SIDEBAR LINK BEHAVIOR
+--------------------------------------- */
+
 .sidebar.collapsed nav a {
-  font-size: 0;              /* hide text */
+  font-size: 0;              /* Hide text */
   padding: 10px 0;
   text-align: center;
   overflow: hidden;
   white-space: nowrap;
 }
 
-/* Optional: show an icon or first letter when collapsed */
+/* Icon (or symbol) shown only when collapsed */
 .sidebar.collapsed nav a::before {
   content: attr(data-icon);
   font-size: 1.5em;
@@ -88,7 +103,10 @@ nav a.active {
   display: block;
 }
 
-/* 4. Fixed logo for toggling */
+/* --------------------------------------
+   TOGGLER LOGO (FIXED, TOP LEFT)
+--------------------------------------- */
+
 #sidebar-logo {
   position: fixed;
   top: 10px;
