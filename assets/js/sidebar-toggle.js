@@ -1,0 +1,1 @@
+<script src="{{ '/assets/js/sidebar-toggle.js' | relative_url }}"></script>
