@@ -21,4 +21,15 @@ defaults:
     values:
       layout: "single"
 footer:
-  custom: true
+    custom: true
+navigation:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Events"
+    url: /events/
+  - title: "Gallery"
+    url: /gallery/
+  - title: "Contact"
+    url: /contact/
