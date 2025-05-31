@@ -8,9 +8,12 @@
   </head>
   <body>
 
-    <div class="sidebar">
-      {% include nav.html %}
-    </div>
+<div class="sidebar {% if page.sidebar_collapsed %}collapsed{% endif %}">
+  <img id="sidebar-logo" src="/assets/images/logo.png" alt="Logo" />
+  <nav>
+    <!-- your nav links -->
+  </nav>
+</div>
 
     <div class="main-content">
       <main>
