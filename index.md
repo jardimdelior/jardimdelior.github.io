@@ -8,3 +8,6 @@ Welcome to **Jardim de Lior**.
 A garden for light, art, and connection. Stay tuned for more!
 
 We offer a space for creativity, growth, and community.
+# Welcome to my site!
+
+[About](/about/) | [Gallery](/gallery/) | [Contact](/contact/)
