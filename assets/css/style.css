@@ -40,6 +40,13 @@ nav a {
   transition: background-color 0.3s;
 }
 
+nav a::before {
+  content: attr(data-icon);
+  margin-right: 8px;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
 nav a:hover {
   background-color: #e0f7e0;
 }
