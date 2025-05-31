@@ -16,3 +16,55 @@ nav a.active {
   text-decoration: underline;
   border-bottom: 2px solid #4CAF50;
 }
+/* Sidebar container */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85); /* transparent white */
+  backdrop-filter: blur(10px);
+  padding: 30px 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+/* Main content pushed to the right */
+.main-content {
+  margin-left: 240px;
+  padding: 20px;
+}
+
+/* Navigation links */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-bottom: 15px;
+}
+
+nav a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #e0f7e0;
+}
+
+nav a.active {
+  font-weight: bold;
+  background-color: #c3f3c3;
+  color: #4CAF50;
+  border-left: 4px solid #4CAF50;
+}
