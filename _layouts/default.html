@@ -9,10 +9,7 @@
   <body>
 
 <div class="sidebar {% if page.sidebar_collapsed %}collapsed{% endif %}">
-  <img id="sidebar-logo" src="/assets/images/logo.png" alt="Logo" />
-  <nav>
-    <!-- your nav links -->
-  </nav>
+  {% include nav.html %}
 </div>
 
     <div class="main-content">
@@ -30,6 +27,8 @@
     sidebar.classList.toggle('collapsed');
   });
 </script>
+src="{{ '/assets/js/sidebar-toggle.js' | relative_url }}">
+  </script>
 
   </body>
 </html>
