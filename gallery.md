@@ -1,6 +1,6 @@
 ---
 layout: single
 title: Gallery
-permalink: /contact/
+permalink: /Gallery/
 sidebar_collapsed: true
 ---
