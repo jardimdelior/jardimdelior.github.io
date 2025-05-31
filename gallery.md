@@ -1,6 +1,6 @@
 ---
 layout: default
 title: Gallery
-permalink: /Gallery/
+permalink: /gallery/
 sidebar_collapsed: true
 ---
