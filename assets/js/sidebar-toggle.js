@@ -1,4 +1,3 @@
-<script src="{{ '/assets/js/sidebar-toggle.js' | relative_url }}"></script>
 // sidebar-toggle.js
 
 document.addEventListener('DOMContentLoaded', () => {
