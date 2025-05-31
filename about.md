@@ -1,7 +1,7 @@
 ---
 layout: default 
-title: "About"
-permalink: /
+title: About
+permalink: /about/
 ---
 
 Welcome to Jardim de Lior — a garden for light, art, and connection.  
