@@ -3,9 +3,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: max-content;
+  width: 120px; /* narrower */
   height: 100%;
-  background-color: rgba(240, 224, 212, 0.85); /* soft Chukum tone */
+  background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   padding: 20px 10px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -15,8 +15,8 @@
 
 /* Main content pushed to the right */
 .main-content {
-  margin-left: 170px;
-  padding: 20px;
+  margin-left: 140px;
+  padding: 10px;
 }
 
 /* Navigation links */
