@@ -13,10 +13,4 @@ layout: home
 title: Home
 ---
 
-# Welcome!
-
-Visit these pages:  
-- [About](/about/)  
-- [Events](/events/)
-- [Gallery](/gallery/)  
-- [Contact](/contact/)
+# Welcome #
