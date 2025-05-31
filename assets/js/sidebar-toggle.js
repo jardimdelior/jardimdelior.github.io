@@ -1,5 +1,3 @@
-// sidebar-toggle.js
-
 document.addEventListener('DOMContentLoaded', () => {
   const logo = document.getElementById('sidebar-logo');
   const sidebar = document.querySelector('.sidebar');
