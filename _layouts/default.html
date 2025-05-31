@@ -18,6 +18,15 @@
       </main>
       {% include footer.html %}
     </div>
+    
+    <script>
+  const logo = document.getElementById('sidebar-logo');
+  const sidebar = document.querySelector('.sidebar');
+
+  logo.addEventListener('click', () => {
+    sidebar.classList.toggle('collapsed');
+  });
+</script>
 
   </body>
 </html>
