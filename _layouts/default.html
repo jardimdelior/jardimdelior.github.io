@@ -8,15 +8,17 @@
   </head>
   <body>
 
-    {% include nav.html %}
+    <div class="sidebar">
+      {% include nav.html %}
+    </div>
 
-    <main>
-      {{ content }}
-    </main>
+    <div class="main-content">
+      <main>
+        {{ content }}
+      </main>
 
-    {% include footer.html %}
-    
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+      {% include footer.html %}
+    </div>
 
   </body>
 </html>
