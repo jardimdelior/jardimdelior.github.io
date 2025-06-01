@@ -41,16 +41,6 @@
   white-space: nowrap;
 }
 
-/* Show only the icon when collapsed */
-.sidebar.collapsed nav a::before {
-  content: attr(data-icon);
-  font-size: 0.44em;
-  font-weight: bold;
-  color: #4CAF50;
-  display: block;
-  margin: 0 auto;
-}
-
 /* --------------------------------------
    MAIN CONTENT
 --------------------------------------- */
