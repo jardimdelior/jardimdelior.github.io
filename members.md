@@ -1,5 +1,5 @@
 ---
-layout: single
-title: members
+layout: default
+title: Members
 permalink: /members/
 ---
