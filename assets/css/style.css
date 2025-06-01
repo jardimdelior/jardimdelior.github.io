@@ -14,7 +14,18 @@
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   overflow-y: auto;
-  transition: width 2.9s ease-in-out, padding 2.9s ease-in-out; /* Smooth folding */
+  .sidebar {
+  transition: width 2.9s ease-in-out, padding 2.9s ease-in-out;
+}
+
+.sidebar nav a {
+  transition: font-size 2.9s ease-in-out, opacity 2.9s ease-in-out;
+  opacity: 1;
+}
+
+.sidebar.collapsed nav a {
+  font-size: 0;
+  opacity: 0;
 }
 
 /* When collapsed (folded) */
