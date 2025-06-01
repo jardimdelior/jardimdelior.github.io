@@ -44,6 +44,7 @@
 .sidebar.collapsed nav a {
   font-size: 0em;
   opacity: 0;            /* Fade out the text */
+  pointer-events: auto;
 }
 .sidebar.collapsed.revealed nav a {
   font-size: 0.44em;
@@ -54,7 +55,6 @@
   white-space: nowrap;
   transition-delay: 0.20s;
   max-height: 180;
-  pointer-events: auto;
 }
 
 /* --------------------------------------
