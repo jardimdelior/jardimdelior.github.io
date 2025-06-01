@@ -29,8 +29,13 @@
 --------------------------------------- */
 
 .main-content {
-  margin-left: 140px; /* Make space for sidebar */
+  margin-left: 140px; /* Space for sidebar */
   padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.collapsed ~ .main-content {
+  margin-left: 80px;
 }
 
 /* --------------------------------------
@@ -58,7 +63,7 @@ nav a {
   color: #333;
   font-weight: 500;
   border-radius: 5px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, font-size 0.3s;
 }
 
 /* Active link */
@@ -74,7 +79,7 @@ nav a:hover {
   background-color: #e0f7e0;
 }
 
-/* Optional icon display — remove data-icon from HTML if not needed */
+/* Icon before text */
 nav a::before {
   content: attr(data-icon);
   margin-right: 8px;
@@ -87,20 +92,20 @@ nav a::before {
 --------------------------------------- */
 
 .sidebar.collapsed nav a {
-  font-size: 0;              /* Hide text */
+  font-size: 60%;         /* Smaller text */
   padding: 10px 0;
   text-align: center;
   overflow: hidden;
   white-space: nowrap;
 }
 
-/* Icon (or symbol) shown only when collapsed */
+/* Icon shown larger when collapsed */
 .sidebar.collapsed nav a::before {
-  content: attr(data-icon);
   font-size: 1.5em;
   font-weight: bold;
   color: #4CAF50;
   display: block;
+  margin: 0 auto 5px;
 }
 
 /* --------------------------------------
@@ -117,4 +122,10 @@ nav a::before {
   color: #4CAF50;
   z-index: 1100;
   user-select: none;
+  max-width: 40px;
+  transition: filter 0.3s ease;
+}
+
+#sidebar-logo:hover {
+  filter: brightness(1.2);
 }
