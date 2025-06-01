@@ -45,7 +45,7 @@
   overflow: hidden;
   white-space: nowrap;
   transition-delay: 0.15s;
-  max-height: 0;
+  max-height: 180;
 }
 
 /* --------------------------------------
