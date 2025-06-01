@@ -1,5 +1,6 @@
 ---
-layout: single
-title: workshops
+layout: default
+title: Workshops
 permalink: /workshops/
+sidebar_collapsed: true
 ---
