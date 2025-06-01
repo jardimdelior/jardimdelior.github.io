@@ -42,8 +42,8 @@
 
 /* When sidebar is collapsed */
 .sidebar.collapsed nav a {
-  font-size: 0.44em;        /* Hide the text */
-  opacity: 0.4;            /* Fade out the text */
+  font-size: 0em;
+  opacity: 0;            /* Fade out the text */
 }
 .sidebar.collapsed.revealed nav a {
   font-size: 0.44em;
