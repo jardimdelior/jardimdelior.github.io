@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
   </head>
   <body>
 
-<div class="sidebar {% if page.sidebar_collapsed %}collapsed{% endif %}">
-  {% include nav.html %}
-</div>
+    <div class="sidebar {% unless page.url == '/' %}collapsed{% endunless %}">
+      {% include nav.html %}
+    </div>
 
     <div class="main-content">
       <main>
@@ -18,18 +18,8 @@
       </main>
       {% include footer.html %}
     </div>
-    
-    <script>
-  const logo = document.getElementById('sidebar-logo');
-  const sidebar = document.querySelector('.sidebar');
 
-  logo.addEventListener('click', () => {
-    sidebar.classList.toggle('collapsed');
-  });
-</script>
-    <!-- JavaScript for sidebar toggle -->
     <script src="{{ '/assets/js/sidebar-toggle.js' | relative_url }}"></script>
-  </body>
-</html>
+
   </body>
 </html>
