@@ -44,21 +44,17 @@
 .sidebar.collapsed nav a {
   font-size: 0.44em;        /* Hide the text */
   opacity: 0.4;            /* Fade out the text */
-  padding: 0.9;           /* Optional, to keep icon alignment */
+}
+.sidebar.collapsed.revealed nav a {
+  font-size: 0.44em;
+  opacity: 0.8;
+  padding: 0.9;
   text-align: center;
   overflow: hidden;
   white-space: nowrap;
   transition-delay: 0.20s;
   max-height: 180;
   pointer-events: auto;
-}
-
-.sidebar.collapsed.revealed nav a {
-  opacity: 1;
-  font-size: 0.88em;
-  text-align: center;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 /* --------------------------------------
