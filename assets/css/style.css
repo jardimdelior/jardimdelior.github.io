@@ -30,7 +30,7 @@
   text-align: center;
   line-height: 40px; /* Adjust based on desired spacing */
   height: 40px;
-  padding: 0.9px 0; /* Vertical space restored */
+  padding: 9px 0; /* Vertical space restored */
   display: block;
   opacity: 1;
   overflow: hidden;
@@ -55,7 +55,7 @@
   text-align: center;
   line-height: 40px;
   height: 40px;
-  padding: 0.9px 0; /* Vertical space restored */
+  padding: 9px 0; /* Vertical space restored */
   overflow: hidden;
   white-space: nowrap;
   transition-delay: 0.08s;
