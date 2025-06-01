@@ -10,11 +10,11 @@
   height: 100%;
   background-color: rgba(240, 224, 212, 0.6); /* Soft Chukum tone */
   backdrop-filter: blur(10px);
-  padding: 20px 10px;
+  padding: 9px 6px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   overflow-y: auto;
-  transition: width 2.9s ease-in-out, padding 2.9s ease-in-out;
+  transition: width 1.9s ease-in-out, padding 1.9s ease-in-out;
 }
 
 /* When collapsed (folded) */
