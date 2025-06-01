@@ -2,6 +2,7 @@
 layout: single
 title: About
 permalink: /about/
+sidebar_collapsed: true
 ---
 
 Welcome to Jardim de Lior — a garden for light, art, and connection.  
