@@ -1,6 +1,6 @@
 ---
 layout: default
-title: gardens
+title: Gardens
 permalink: /gardens/
 sidebar_collapsed: true
 ---
