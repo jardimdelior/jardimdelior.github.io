@@ -42,7 +42,6 @@
 --------------------------------------- */
 
 .main-content {
-  min-width: 300px;
   margin-left: 140px; /* Space for sidebar */
   padding: 20px;
   transition: margin-left 0.3s ease;
