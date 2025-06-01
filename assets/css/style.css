@@ -69,6 +69,17 @@ nav li {
   margin-bottom: 4px;
 }
 
+nav a {
+  text-decoration: none;
+  color: #333; /* or your preferred color */
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #7a5c3e; /* Optional hover color */
+}
+
 /* --------------------------------------
    NAVIGATION LINKS
 --------------------------------------- */
