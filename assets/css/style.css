@@ -26,10 +26,11 @@
 
 /* Link animations inside sidebar */
 .sidebar nav a {
-  font-size: 0.85em;
+  font-size: 1.4em;
   text-align: center;
   line-height: 40px; /* Adjust based on desired spacing */
   height: 40px;
+  padding: 8px 0; /* Vertical space restored */
   display: block;
   opacity: 1;
   overflow: hidden;
@@ -49,11 +50,12 @@
   opacity: 0;            /* Fade out the text */
 }
 .sidebar.collapsed.ready nav a {
-  font-size: 0.85em;
-  opacity: 1;
+  font-size: 0.80em;
+  opacity: 0.8;
   text-align: center;
   line-height: 40px;
   height: 40px;
+  padding: 10px 0; /* Vertical space restored */
   overflow: hidden;
   white-space: nowrap;
   transition-delay: 0.08s;
