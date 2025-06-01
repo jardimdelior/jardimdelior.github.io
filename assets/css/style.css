@@ -26,8 +26,17 @@
 
 /* Link animations inside sidebar */
 .sidebar nav a {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  color: #2e2e2e;
   font-size: 1.4em;
   text-align: center;
+  transition:
+    font-size 2s ease,
+    opacity 2s ease,
+    padding 2s ease,
+    letter-spacing 2s ease;
   line-height: 40px; /* Adjust based on desired spacing */
   height: 40px;
   padding: 9px 0; /* Vertical space restored */
@@ -55,6 +64,7 @@
   text-align: center;
   line-height: 40px;
   height: 40px;
+  letter-spacing: 0.2px;
   padding: 9px 0; /* Vertical space restored */
   overflow: hidden;
   white-space: nowrap;
