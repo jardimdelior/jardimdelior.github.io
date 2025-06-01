@@ -15,13 +15,13 @@
   z-index: 1000;
   overflow-y: auto;
   transition: width 1.9s ease-in-out, padding 1.9s ease-in-out;
+  overflow-x: hidden;
 }
 
 /* When collapsed (folded) */
 .sidebar.collapsed {
   width: 60px;
   padding: 30px 10px;
-  overflow-x: hidden;
 }
 
 /* Link animations inside sidebar */
@@ -34,18 +34,19 @@
   transition: opacity 0.6s ease-in-out;
   transition: font-size 1.9s ease-in-out, opacity 1.9s ease-in-out;
   transition-delay: 0.20s;
+  transition: opacity 1s ease-in-out;
 }
 
 .sidebar.collapsing nav a {
   opacity: 0;
+  pointer-events: none;
 }
 
 /* When sidebar is collapsed */
 .sidebar.collapsed nav a {
   opacity: 0;            /* Fade out the text */
-  pointer-events: auto;
 }
-.sidebar.collapsed.revealed nav a {
+.sidebar.collapsed.ready nav a {
   font-size: 0.5em;
   opacity: 0.8;
   padding: 1;
@@ -54,6 +55,7 @@
   white-space: nowrap;
   transition-delay: 0.08s;
   max-height: 180;
+  pointer-events: auto;
 }
 
 /* --------------------------------------
@@ -63,7 +65,7 @@
 .main-content {
   margin-left: 140px; /* Space for sidebar */
   padding: 20px;
-  transition: margin-left 0.3s ease;
+  transition: margin-left 1.9s ease-in-out;
 }
 
 .sidebar.collapsed ~ .main-content {
